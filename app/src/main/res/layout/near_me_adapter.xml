@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10sp"
+        android:id="@+id/relative"
+        android:layout_marginRight="10sp">
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:id="@+id/product_image"
+            android:src="@drawable/apture"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/product_image"
+            android:id="@+id/product_name"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:text="Auspicious Incense Enterprise"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/product_image"
+            android:layout_marginTop="8dp"
+            android:text="Open Now"
+            android:id="@+id/store_status"
+            android:textColor="@color/light_green"
+            android:layout_below="@+id/product_name"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/store_status"
+            android:layout_marginTop="8dp"
+            android:text="0.4 KM away from you"
+            android:textColor="@color/black"
+            android:layout_below="@+id/product_name"
+            android:layout_marginLeft="20dp"
+            android:textSize="12sp"
+            android:id="@+id/away_txt"/>
+
+        <RatingBar
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:id="@+id/rating"
+            android:layout_marginTop="10dp"
+            style="?android:attr/ratingBarStyleSmall"
+            android:theme="@style/RatingBar"
+            android:layout_toEndOf="@+id/product_image"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/store_status"
+            android:rating="4"
+            android:progressTint="@color/yellow"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/product_image"
+            android:layout_marginTop="5dp"
+            android:background="@color/black"></View>
+
+    </RelativeLayout>
+</RelativeLayout>

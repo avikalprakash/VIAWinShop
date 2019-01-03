@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sneakers &amp; Shoes"
+        android:gravity="center_vertical"
+        android:textSize="12dp"
+        android:id="@+id/sectorName"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="true"
+        android:drawableRight="@drawable/next_small"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/sectorName"
+        android:background="@color/gray4"
+        android:layout_marginTop="5dp"></View>
+</RelativeLayout>

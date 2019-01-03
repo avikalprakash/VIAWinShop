@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".Fragment.PaymentQRFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/payment_qr"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:id="@+id/title"
+        />
+
+    <LinearLayout
+        android:layout_width="150sp"
+        android:layout_height="55sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:background="@drawable/light_green_bg"
+        android:orientation="vertical"
+        android:id="@+id/credit_layout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="52,909"
+            android:textColor="@color/light_green"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="points"
+            android:textColor="@color/light_green"
+            android:textSize="12sp"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/imageqr"
+        android:id="@+id/qr_image"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/introducer_name"
+        android:textColor="#000000"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daniel Phane"
+        android:id="@+id/name"
+        android:textColor="@color/light_green"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/email"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="abc@abc.com"
+        android:id="@+id/email"
+        android:textColor="@color/light_green"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/mobile_no"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="+123456789"
+        android:id="@+id/mobile"
+        android:textColor="@color/light_green"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>
+
+    <com.tuyenmonkey.mkloader.MKLoader
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        app:mk_type="LineSpinner"
+        android:id="@+id/loader"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:mk_color="@color/light_green"
+        />
+    </RelativeLayout>
+</ScrollView>

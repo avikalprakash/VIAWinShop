@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MerchantProductDetailsActivity"
+    android:background="@color/white">
+    <include layout="@layout/custom_header"
+        android:id="@+id/header"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+
+        <com.tuyenmonkey.mkloader.MKLoader
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            app:mk_type="LineSpinner"
+            android:id="@+id/loader"
+            android:visibility="gone"
+            android:layout_marginTop="160sp"
+            android:layout_centerHorizontal="true"
+            app:mk_color="@color/light_green"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="235dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/imageView"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/imageView"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="30dp"
+    android:text="Open Now"
+    android:id="@+id/store_status"
+    android:textColor="@color/light_green"
+    />
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:layout_marginTop="10dp"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/imageView"
+        android:rating="4"
+        android:id="@+id/ratting"
+        android:layout_alignParentRight="true"
+        android:progressTint="@color/yellow"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/store_status"
+        android:id="@+id/product_name"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="15sp"
+        android:text="Mont Kiara Shoplex , Japan Kiara"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_name"
+        android:id="@+id/product_description"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="12sp"
+        android:text="One of the sneaker shops in Malaysia. The one of the appreciation of sneakers has beed a part of our tradition since the part ."
+        android:gravity="center_horizontal"
+        android:textColor="@color/gray4"
+        />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_below="@+id/product_description"
+            android:layout_marginTop="10sp"
+            android:id="@+id/view1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"></View>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tabCoordinatorLayout"
+        android:layout_below="@+id/view1"
+        tools:context="com.example.lue.activemedical.Activities.MainActivity">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--<include layout="@layout/header"/>-->
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tablayoutmerchants"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                app:tabIndicatorHeight="0dp"
+                app:tabSelectedTextColor="@color/light_blue"
+                app:tabTextColor="@color/gray4"
+                app:tabBackground="@color/white"
+                app:tabGravity="fill"
+                app:tabMaxWidth="0dp"
+                app:tabMode="fixed"
+                >
+
+            </android.support.design.widget.TabLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pagermerchants"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent">
+            </android.support.v4.view.ViewPager>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tabCoordinatorLayout"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/see_all_menu"
+            android:textColor="@color/black"
+            android:layout_marginRight="20dp"
+            android:paddingRight="10dp"
+            android:id="@+id/seeAllMenuText"
+            android:drawableRight="@drawable/forward_arrow"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seeAllMenuText"
+            android:id="@+id/text"
+            android:text="@string/merchant_location"
+            android:textColor="@color/gray4"
+            android:textSize="13dp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:id="@+id/merchantLocationText"
+            android:text="Mont Kiara"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="6dp"/>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/merchantLocationText">
+
+                <com.google.android.gms.maps.MapView
+                    class="com.google.android.gms.maps.SupportMapFragment"
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="255dp"
+                    />
+
+            </RelativeLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="70dp"
+    >
+    <!--<ImageView-->
+        <!--android:id="@+id/menu_btn"-->
+        <!--android:layout_width="55dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:src="@drawable/ic_menu_black"/>-->
+    <!--<ImageView-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="wrap_content"-->
+
+        <!--android:src="@drawable/bbblogo"-->
+        <!--android:layout_alignTop="@+id/frame_head"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true" />-->
+
+
+    <FrameLayout
+        android:id="@+id/frame_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp">
+
+        <TextView
+            android:id="@+id/fab2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:background="@drawable/circle_shape_green"
+            android:text="0"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="10dp"
+            android:src="@drawable/shopping_cart" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/headertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:textColor="#FFFFFF"
+        android:layout_marginStart="21dp"
+        android:text="TextView"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="-15dp"/>
+<RelativeLayout
+    android:layout_width="240dp"
+    android:layout_height="45dp"
+    android:id="@+id/headerlayout"
+    android:layout_marginTop="2dp"
+    android:layout_marginRight="65dp"
+    android:layout_alignParentRight="true"
+    android:background="@drawable/btn_gray_radious"
+    android:layout_alignTop="@+id/frame_head"
+    android:layout_toEndOf="@+id/headertext">
+    <ImageView
+        android:id="@+id/search_header"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_search" />
+</RelativeLayout>
+
+</RelativeLayout>

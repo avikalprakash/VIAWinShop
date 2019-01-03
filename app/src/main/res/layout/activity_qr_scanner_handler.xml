@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:text="back"
+        android:id="@+id/back"
+        android:background="#f43142"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        />
+
+    <com.tuyenmonkey.mkloader.MKLoader
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        app:mk_type="LineSpinner"
+        android:id="@+id/loader"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:mk_color="@color/light_green"
+        />
+</RelativeLayout>

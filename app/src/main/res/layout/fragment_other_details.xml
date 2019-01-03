@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.OtherDetailsFragment"
+    android:background="@color/white">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:src="@drawable/other_details"
+        android:id="@+id/image_other_details"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/no_record_found"
+        android:gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:id="@+id/record_status"/>
+    <com.tuyenmonkey.mkloader.MKLoader
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        app:mk_type="LineSpinner"
+        android:id="@+id/loader"
+        android:visibility="gone"
+        android:layout_marginTop="160sp"
+        android:layout_centerHorizontal="true"
+        app:mk_color="@color/light_green"
+        />
+</RelativeLayout>

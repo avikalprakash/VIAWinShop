@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.NewsActivity"
+    android:background="@color/white">
+    <include layout="@layout/custom_header"
+        android:id="@+id/header"/>
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/header"
+        tools:context="com.example.lue.activemedical.Activities.MainActivity">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <!--<include layout="@layout/header"/>-->
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tablayoutmerchants"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                app:tabIndicatorHeight="0dp"
+                app:tabSelectedTextColor="@color/light_green"
+                app:tabTextColor="@color/gray4"
+                app:tabBackground="@drawable/tab_light_green"
+                app:tabGravity="fill"
+                app:tabMaxWidth="0dp"
+                app:tabMode="fixed"
+                app:tabPaddingStart="10dp"
+                app:tabPaddingEnd="10dp"
+                android:clipToPadding="false"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+            </android.support.design.widget.TabLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pagermerchants"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent">
+            </android.support.v4.view.ViewPager>
+
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

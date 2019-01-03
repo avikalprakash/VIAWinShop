@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.Profile"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:id="@+id/logo"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/avatar"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Peter sagan"
+            android:layout_marginLeft="30sp"
+            android:textColor="#ee6a50"
+            android:id="@+id/nme_txt"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Premium Member"
+            android:textColor="@color/light_green"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/membertype_txt"
+            android:textSize="20sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30sp">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:src="@drawable/gender"
+                android:layout_height="22dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gender_txt"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:text="Male"
+                android:layout_marginLeft="10dp"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30sp">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:src="@drawable/mail"
+                android:layout_height="22dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/email_txt"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:text="daniealphan123@gmail.com"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30sp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:src="@drawable/mobile"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mobile_txt"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:text="1234567890000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30sp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:src="@drawable/date"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dob_txt"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="12/08/2000"
+                android:layout_marginLeft="10dp"/>
+
+
+
+
+
+        </LinearLayout>
+
+        <Button android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/edtpro_btn"
+            android:background="@drawable/btn_light_green"
+            android:text="@string/edit_profile"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"/>
+
+
+
+    </LinearLayout>
+    <com.tuyenmonkey.mkloader.MKLoader
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        app:mk_type="LineSpinner"
+        android:id="@+id/loader"
+        android:visibility="gone"
+        android:layout_marginTop="160sp"
+        android:layout_centerHorizontal="true"
+        app:mk_color="@color/light_green"
+        />
+    </RelativeLayout>
+</ScrollView>

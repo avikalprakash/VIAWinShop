@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.BecomeMerchantFragment">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/become_a_merchant"
+        android:layout_marginTop="20dp"
+        android:id="@+id/title"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/fill_in_the_details_as_per_registered_ssm_information"
+        android:layout_marginTop="50dp"
+        android:id="@+id/text1"
+        android:textSize="12sp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_gray_radious"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/company_name_text"
+            android:hint="@string/company_name"
+            android:inputType="text"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:backgroundTint="@android:color/transparent"
+            android:textColorHint="@color/light_gray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_gray_radious"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@null"
+            android:id="@+id/charge_text"
+            android:layout_gravity="center"
+            android:inputType="text"
+            android:hint="@string/person_in_charge"
+            android:textColor="@color/black"
+            android:backgroundTint="@android:color/transparent"
+            android:textColorHint="@color/light_gray"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_gray_radious"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/email_text"
+            android:hint="@string/email"
+            android:textColor="@color/black"
+            android:background="@null"
+            android:inputType="textEmailAddress"
+            android:layout_gravity="center"
+            android:backgroundTint="@android:color/transparent"
+            android:textColorHint="@color/light_gray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_gray_radious"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/mobile_text"
+            android:hint="@string/contact_no"
+            android:textColor="@color/black"
+            android:background="@null"
+            android:inputType="number"
+            android:layout_gravity="center"
+            android:backgroundTint="@android:color/transparent"
+            android:textColorHint="@color/light_gray"/>
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/submit"
+        android:id="@+id/submit_btn"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_light_green"/>
+</LinearLayout>
+    <com.tuyenmonkey.mkloader.MKLoader
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        app:mk_type="LineSpinner"
+        android:id="@+id/loader"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:mk_color="@color/light_green"
+        />
+
+</RelativeLayout>
+</ScrollView>

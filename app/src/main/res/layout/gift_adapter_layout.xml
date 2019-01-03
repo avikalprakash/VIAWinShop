@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/relclick"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/fullRelative"
+        android:layout_margin="10dp"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:id="@+id/logomimf"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/avatar"
+            />
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/product_name"
+             android:layout_below="@+id/logomimf"
+             android:layout_marginTop="15dp"
+             android:textSize="12dp"
+             android:maxLength="10"
+             android:textColor="@color/black"
+             android:layout_centerHorizontal="true"
+             android:text="Product"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/price"
+            android:textSize="16dp"
+            android:textColor="@color/light_blue"
+            android:layout_below="@+id/product_name"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:text="Price"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
